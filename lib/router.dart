@@ -12,8 +12,7 @@ final routerProvider = Provider((ref) => GoRouter(
             GoRoute(
               path: ItemPage.path,
               builder: (context, state) => ItemPage(
-                id: state.uri.queryParameters[ItemPage.params] ??
-                    'default_value',
+                id: state.pathParameters[ItemPage.params]!,
               ),
             )
           ],

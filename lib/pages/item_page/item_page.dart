@@ -27,9 +27,9 @@ class ItemPage extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         children: [
           ItemCover(
-            id: 'id',
+            id: id,
           ),
-          ItemDetails(id: 'id'),
+          ItemDetails(id: id),
         ],
       ),
     );
