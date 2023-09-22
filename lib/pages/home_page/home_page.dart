@@ -1,7 +1,9 @@
+import 'package:ecshop_techpit/pages/cart_page/cart_page.dart';
 import 'package:ecshop_techpit/pages/home_page/home_header.dart';
 import 'package:ecshop_techpit/pages/home_page/item_categories.dart';
 import 'package:ecshop_techpit/pages/home_page/item_grid.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,7 +18,7 @@ class HomePage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.shopping_cart),
-            onPressed: () {},
+            onPressed: () => GoRouter.of(context).go('/${CartPage.path}'),
           ),
         ],
       ),
