@@ -46,7 +46,7 @@ class ItemDetails extends ConsumerWidget {
               ),
               _AddToCart(
                 options: data.options,
-                id: 'id',
+                id: id,
               ),
               //Option Buttons
               //AddToCardButton
